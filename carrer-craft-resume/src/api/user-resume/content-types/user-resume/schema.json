@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_resumes",
+  "info": {
+    "singularName": "user-resume",
+    "pluralName": "user-resumes",
+    "displayName": "user-resumes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "resumeId": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "summery": {
+      "type": "string"
+    },
+    "document": {
+      "type": "string"
+    },
+    "education": {
+      "type": "component",
+      "repeatable": true,
+      "component": "education.education"
+    },
+    "experience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.experience"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.skills"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}
